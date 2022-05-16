@@ -7,8 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoginComponent implements OnInit {
 
+  currentDay = "Monday";
+  newAddedItems = ["paper", "pen", "juices"];
   constructor() { }
 
+  addItem(newIteam: string) {
+    this.newAddedItems.push(newIteam);
+  }
   ngOnInit(): void {
   }
 

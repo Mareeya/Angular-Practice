@@ -1,3 +1,7 @@
 <p>login works!</p>
 <h2>Parent component</h2>
-<app-test-child> </app-test-child>
+<ul>
+  <li *ngFor="let item of newAddedItems">{{ item }}</li>
+</ul>
+<app-test-child [day]="currentDay" (newItemEvent)="addItem($event)">
+</app-test-child>
