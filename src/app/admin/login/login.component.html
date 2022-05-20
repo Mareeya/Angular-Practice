@@ -3,5 +3,5 @@
 <ul>
   <li *ngFor="let item of newAddedItems">{{ item }}</li>
 </ul>
-<app-test-child [day]="currentDay" (newItemEvent)="addItem($event)">
+<app-test-child [day]="currentDay" (newItem)="addItem($event)">
 </app-test-child>
